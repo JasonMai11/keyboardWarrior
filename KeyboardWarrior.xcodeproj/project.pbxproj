@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		96A1BFAD303A1E28009F6B00 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1BFAC303A1E28009F6B00 /* Player.swift */; };
+		96A1BFAF303A1E40009F6B00 /* RaceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1BFAE303A1E40009F6B00 /* RaceResult.swift */; };
+		96A1BFB5303CF0AA009F6B00 /* TypingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1BFB1303CA5CB009F6B00 /* TypingEngine.swift */; };
+		96A1BFB7303CF638009F6B00 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 96A1BFB6303CF633009F6B00 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		96A1BF8F303A1A98009F6B00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +34,10 @@
 		96A1BF81303A1A96009F6B00 /* KeyboardWarrior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardWarrior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A1BF8E303A1A98009F6B00 /* KeyboardWarriorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardWarriorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A1BF98303A1A98009F6B00 /* KeyboardWarriorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardWarriorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A1BFAC303A1E28009F6B00 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		96A1BFAE303A1E40009F6B00 /* RaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResult.swift; sourceTree = "<group>"; };
+		96A1BFB1303CA5CB009F6B00 /* TypingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingEngine.swift; sourceTree = "<group>"; };
+		96A1BFB6303CF633009F6B00 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +54,11 @@
 		96A1BF9B303A1A98009F6B00 /* KeyboardWarriorUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = KeyboardWarriorUITests;
+			sourceTree = "<group>";
+		};
+		96A1BFB2303CEDF6009F6B00 /* Debug */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Debug;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +91,9 @@
 		96A1BF78303A1A96009F6B00 = {
 			isa = PBXGroup;
 			children = (
+				96A1BFB6303CF633009F6B00 /* .gitignore */,
+				96A1BFB0303CA5C4009F6B00 /* Engine */,
+				96A1BFAB303A1E02009F6B00 /* Models */,
 				96A1BF83303A1A96009F6B00 /* KeyboardWarrior */,
 				96A1BF91303A1A98009F6B00 /* KeyboardWarriorTests */,
 				96A1BF9B303A1A98009F6B00 /* KeyboardWarriorUITests */,
@@ -90,6 +109,24 @@
 				96A1BF98303A1A98009F6B00 /* KeyboardWarriorUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		96A1BFAB303A1E02009F6B00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96A1BFAC303A1E28009F6B00 /* Player.swift */,
+				96A1BFAE303A1E40009F6B00 /* RaceResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96A1BFB0303CA5C4009F6B00 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				96A1BFB2303CEDF6009F6B00 /* Debug */,
+				96A1BFB1303CA5CB009F6B00 /* TypingEngine.swift */,
+			);
+			path = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +146,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				96A1BF83303A1A96009F6B00 /* KeyboardWarrior */,
+				96A1BFB2303CEDF6009F6B00 /* Debug */,
 			);
 			name = KeyboardWarrior;
 			packageProductDependencies = (
@@ -212,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A1BFB7303CF638009F6B00 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A1BFB5303CF0AA009F6B00 /* TypingEngine.swift in Sources */,
+				96A1BFAF303A1E40009F6B00 /* RaceResult.swift in Sources */,
+				96A1BFAD303A1E28009F6B00 /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

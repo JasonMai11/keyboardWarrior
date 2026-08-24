@@ -9,6 +9,13 @@ import SwiftUI
 
 @main
 struct KeyboardWarriorApp: App {
+    
+    init() {
+        #if DEBUG
+        runTypeEngineManualTest()
+        #endif
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
